@@ -1,6 +1,7 @@
 package br.edu.cefsa.ftt.ec.chart.app;
 
-//TODO: Projeto N1 - Esta é a estratura básica do projeto
+//TODO: Projeto N1
+//TODO: Esta é a estratura básica do projeto
 //TODO: Abrir um arquivo e ler os dados
 //TODO: Mudar parametros do gráfico pegando dados com usuário utilizando dialog
 //TODO: Gerar o gráfico no centro da interface (border layout)
