@@ -28,6 +28,8 @@ public class Main extends Application {
 		try {
 			
 			BorderPane rootBorderPane = new BorderPane();
+			//Reference: https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/BorderPane.html
+			
 			Scene scene = new Scene(rootBorderPane, 800, 600);
 			
 			primaryStage.setTitle("JavaFX - Chart Controll");
@@ -35,12 +37,15 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			
 			//Components declaration:
+			//Reference: https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/package-summary.html
 			
 			Button buttonFileOpen = new Button("Open");
 			
 			Button buttonSettings = new Button("Settings");
 
 			Slider slider = new Slider();
+			//Reference for Slider: https://docs.oracle.com/javafx/2/ui_controls/slider.htm
+			//                      https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Slider.html
 			
 			slider.setMin(1);
 			slider.setMax(100);
@@ -51,7 +56,9 @@ public class Main extends Application {
 			slider.setMinorTickCount(5);
 			slider.setBlockIncrement(10);
 			
-		     Label status = new Label("Status: ");
+		    Label status = new Label("Status: ");
+		    
+		    //TODO: Criar componente do gráfico...
 			
 			//Actions to the interactive components:
 			
@@ -85,14 +92,16 @@ public class Main extends Application {
 		    toolbar.getItems().add(buttonSettings);
 		    toolbar.getItems().add(slider);
 		     
-		     
 		    HBox statusbar = new HBox();
+		    //Reference: https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/HBox.html
 
 		    statusbar.getChildren().add(status);
 
 		    rootBorderPane.setTop(toolbar);
+		    
 		    //TODO: Criar o gráfico e carrega-lo no centro...
 		    rootBorderPane.setCenter(new Label("O gráfico vai aqui..."));
+		    
 		    rootBorderPane.setBottom(statusbar);
 		      
 			//Mágica...
